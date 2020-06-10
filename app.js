@@ -133,12 +133,6 @@ var arrayquestion = [
 ];
 
 for (var i = 0; i < arrayquestion.length; i++) {
-  //   var arrayquestion = [
-  //     "do you think I am a Female ?",
-  //     "is my major scientific or Literary ?",
-  //     "Do I love programming ?",
-  //     "do I hate my major(physics) ?",
-  //   ];
   var userInput = prompt(arrayquestion[i].toLowerCase());
   condition(userInput);
   function condition(userInput) {
@@ -156,6 +150,123 @@ for (var i = 0; i < arrayquestion.length; i++) {
     }
     return userInput;
   }
-  //return userInput;
 }
-alert(" your grade is " + grade + "out of 7");
+//1st try
+// function looop() {
+//   if (x < 4) {
+//     userinput = prompt(
+//       "how many top countries do I like to visit?",
+//       "type a number"
+//     );
+//   } else if (x > 4) {
+//     userinput = prompt("Suggest a name of a color I love?").toLowerCase();
+//   }
+//   return userinput;
+// }
+
+// for (var x = 0; x < 4; x++) {
+//   looop();
+//   if (userinput == 10) {
+//     grade++;
+
+//     break;
+//   } else if (userinput > 10) {
+//     alert("too high!");
+//   } else if (userinput < 10) {
+//     alert("too low!");
+//   }
+// }
+// alert(" the correct answer is 10 ");
+
+// var arraycolor = ["red", "blue", "white", "pink"];
+// for (var x = 4; x < 10; x++) {
+//   looop();
+//   if (
+//     userinput == arraycolor[0] ||
+//     userinput == arraycolor[1] ||
+//     userinput == arraycolor[2] ||
+//     userinput == arraycolor[3]
+//   ) {
+//     grade++;
+//     break;
+//   }
+// }
+// alert("the right answers are : blue white pink and red");
+// alert(" your grade is " + grade + " out of 7");
+
+//   if (course == "y" || course == "yes") {
+//     grade++;
+//   }
+//2nd try
+//for (var x = 0; x < 4; x++) {
+
+// var userinput = prompt(
+//   "how many top countries do I like to visit?",
+//   "type a number"
+// );
+
+// if (userinput == 10) {
+//   grade++;
+
+//   break;
+// } else if (userinput > 10) {
+//   alert("too high!");
+// } else if (userinput < 10) {
+//   alert("too low!");
+// }
+//}
+
+function q6() {
+  for (var x = 0; x < 4; x++) {
+    var userinput = prompt(
+      "how many top countries do I like to visit?",
+      "type a number"
+    );
+
+    if (userinput == 10) {
+      grade++;
+
+      break;
+    } else if (userinput > 10) {
+      alert("too high!");
+    } else if (userinput < 10) {
+      alert("too low!");
+    }
+  }
+}
+q6();
+alert(" the correct answer is 10 ");
+
+//var arraycolor = ["red", "blue", "white", "pink"];
+//for (var m = 0; m < 6; m++) {
+
+// var colors = prompt("Suggest a name of a color I love?").toLowerCase();
+// if (
+//   colors == arraycolor[0] ||
+//   colors == arraycolor[1] ||
+//   colors == arraycolor[2] ||
+//   colors == arraycolor[3]
+// )
+//{
+//grade++;
+//break;
+//}
+//}
+function q7() {
+  var arraycolor = ["red", "blue", "white", "pink"];
+  for (var m = 0; m < 6; m++) {
+    var colors = prompt("Suggest a name of a color I love?").toLowerCase();
+    if (
+      colors == arraycolor[0] ||
+      colors == arraycolor[1] ||
+      colors == arraycolor[2] ||
+      colors == arraycolor[3]
+    ) {
+      grade++;
+      break;
+    }
+  }
+}
+q7();
+alert("the right answers are : blue white pink and red");
+alert(" your grade is " + grade + " out of 7");
