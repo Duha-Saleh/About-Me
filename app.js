@@ -271,3 +271,4 @@ q7();
 alert("the right answers are : blue white pink and red");
 alert(" your grade is " + grade + " out of 7");
 //change
+//change2
